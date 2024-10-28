@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherché Inc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background: #1E1E1E;
+            color: #FFFFF9;
+        }
+        
+        .logo {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            font-family: 'Monoton', cursive;
+        }
+        
+        .pronunciation {
+            font-family: monospace;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #FFFFF9;
+        }
+        
+        .definition {
+            margin-bottom: 2rem;
+        }
+        
+        .definition ol {
+            padding-left: 2rem;
+        }
+        
+        .brands {
+            margin-top: 3rem;
+        }
+        
+        .brands h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .brands ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .brands li {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        /* Accessibility improvements */
+        a {
+            color: #FFFFF9;
+            text-decoration: underline;
+        }
+        
+        a:hover, a:focus {
+            text-decoration: none;
+            outline: 2px solid #FFFFF9;
+            outline-offset: 2px;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1E1E1E;
+                color: #FFFFF9;
+            }
+            
+            .pronunciation {
+                color: #FFFFF9;
+            }
+            
+            a {
+                color: #FFFFF9;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" role="banner">
+            Recherché &nbsp;&nbsp; Inc
+        </div>
+    </header>
+    
+    <main>
+        <div class="pronunciation" aria-label="Pronunciation">
+            /ɹəˌʃɛɹˈʃeɪ/
+        </div>
+        
+        <div class="definition">
+            <ol aria-label="Definition">
+                <li>Sought out and chosen with care; choice; exquisite.</li>
+                <li>Exotic; of rare quality, elegance, attractiveness, etc.</li>
+            </ol>
+        </div>
+        
+        <div class="brands">
+            <h2>Brands</h2>
+            <ul aria-label="Brand list">
+                <li>
+                    <a href="https://recherchelabs.com/">Recherché Labs</a>
+                </li>
+                <li>
+                    <a href="https://cryptonomic.tech/">Cryptonomic</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
